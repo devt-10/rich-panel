@@ -8,7 +8,7 @@ const jwt = require("jsonwebtoken");
 const dotenv = require("dotenv").config();
 mongoose
   .connect(
-    "mongodb+srv://devthakkarlm10:Z2KRkJFepIYsqDqi@cluster0.kjhykks.mongodb.net/?retryWrites=true&w=majority",
+    "mongodb+srv://devthakkarlm10:Z2KRkJFepIYsqDqi@cluster0.kjhykks.mongodb.net/?retryWrites=true&w=majority",//environment variable kept here for ease
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
@@ -48,7 +48,7 @@ app.post("/login", async (req, res) => {
     if (isMatch) {
       const token = jwt.sign(
         { email: foundUser.email },
-        "e3391b50de573922368e49234f4bae74d990c4bc0562dff670b3f81c11ac9fee",
+        "e3391b50de573922368e49234f4bae74d990c4bc0562dff670b3f81c11ac9fee", //environment variable kept here for ease
         {
           expiresIn: "1h",
         }
