@@ -1,6 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const User = require("./models/User");
+const User = require("./models/user.js");
 const app = express();
 const cors = require("cors");
 const bcrypt = require("bcrypt");
@@ -8,7 +8,7 @@ const jwt = require("jsonwebtoken");
 const dotenv = require("dotenv").config();
 mongoose
   .connect(
-    "mongodb+srv://devthakkarlm10:Z2KRkJFepIYsqDqi@cluster0.kjhykks.mongodb.net/?retryWrites=true&w=majority",//environment variable kept here for ease
+    "mongodb+srv://devthakkarlm10:Z2KRkJFepIYsqDqi@cluster0.kjhykks.mongodb.net/?retryWrites=true&w=majority", //environment variable kept here for ease
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
