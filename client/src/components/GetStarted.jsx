@@ -156,6 +156,9 @@ export default function Example() {
               Platform that combines the best of AI and humans to respond
               faster, manage all channels & scale your customer service.
             </p>
+            <p className="mt-6 text-sx leading-8 text-green-600">
+              Kindly wait 50 sec for the free deployment to start...
+            </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="/login"
