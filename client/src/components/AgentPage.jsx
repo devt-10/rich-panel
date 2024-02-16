@@ -12,7 +12,9 @@ function AgentPage() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/users");
+        const response = await axios.get(
+          "https://rich-panel-backend.onrender.com/users"
+        );
         setUsers(response.data);
       } catch (error) {
         console.error("Failed to get users:", error);

@@ -31,7 +31,7 @@ function Login() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:3000/login",
+        "https://rich-panel-backend.onrender.com/login",
         {
           ...formData,
         },
