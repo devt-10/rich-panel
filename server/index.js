@@ -24,7 +24,7 @@ mongoose
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(
-  cors({ origin: "https://rich-panel-backend.onrender.com", credentials: true })
+  cors({ origin: "https://rich-panel-final.vercel.app/", credentials: true })
 );
 
 app.get("/users", async (req, res) => {
